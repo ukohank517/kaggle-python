@@ -62,7 +62,14 @@
 
 4. Install tool package and kernel:
     ``` bash
-    $ pip install jupyter notebook
+    $ pip install jupyter notebook nbdime
     $ conda install notebook ipykernel
     $ ipython kernel install --user --name ML --display-name ML
+
+    # install required package for this repository
+    $ pip install -r requirements.txt
+
+    # install tool to check file diff
+    $ nbdime extensions --enable
+    $ nbdime config-git --enable --global
     ```
